@@ -1,0 +1,49 @@
+/* Main sectim css */
+
+
+body {
+    font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
+}
+
+#hero {
+    width:1140px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+
+    article {
+        width:600px;
+        margin-top:80px;
+
+        }
+        aside {
+            width:500px;
+            height:auto;
+            img {
+                width:100%;
+                height:auto;
+            }
+        }
+}
+
+    header {
+        max-width:1140px;
+        display: flex;
+        justify-content: space-between;
+        margin:0 auto;
+        .logo {
+            width: 200px;
+            height:auto;
+        }
+
+        nav {
+            align-items: flex-end;
+            margin: 2.4rem 0 0;
+            a {
+                color:black;
+                margin: 0 3.4rem 0 0;
+                font-weight:400;
+            }
+            
+        }
+    }

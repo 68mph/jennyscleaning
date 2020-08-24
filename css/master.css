@@ -1,0 +1,202 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+button {
+  background-color: #4469FF;
+  padding: .8rem;
+  text-align: center;
+  min-width: 188px;
+  border-radius: 8px;
+  color: #EFF3FC;
+  border: none;
+  margin-right: 1rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: #34327B;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 3.6rem;
+  padding: 0 0 2rem;
+}
+
+h1 span {
+  color: #4469FF;
+}
+
+h2 {
+  padding: 0 0 2rem;
+  line-height: 1.4rem;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/* Main sectim css */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+#hero {
+  width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#hero article {
+  width: 600px;
+  margin-top: 80px;
+}
+
+#hero aside {
+  width: 500px;
+  height: auto;
+}
+
+#hero aside img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 200px;
+  height: auto;
+}
+
+header nav {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 2.4rem 0 0;
+}
+
+header nav a {
+  color: black;
+  margin: 0 3.4rem 0 0;
+  font-weight: 400;
+}

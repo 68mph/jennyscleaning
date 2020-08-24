@@ -1,0 +1,15 @@
+
+$color-main-blue: #4469FF;
+$color-title:#34327B;
+$color-text-lt: #EFF3FC;
+
+button {
+    background-color: $color_main_blue ;
+    padding: .8rem;
+    text-align: center;
+    min-width: 188px;
+    border-radius: 8px;
+    color: $color-text-lt;
+    border:none;
+    margin-right: 1rem;
+}
