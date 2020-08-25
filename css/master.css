@@ -100,6 +100,11 @@ input, select {
   vertical-align: middle;
 }
 
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .button {
   background-color: #4469FF;
   padding: .8rem;
@@ -301,6 +306,11 @@ header nav a {
 
 #about .icon-container .icons p {
   font-size: 16px;
+}
+
+#services img {
+  width: 640px;
+  height: auto;
 }
 
 footer .inner {

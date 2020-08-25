@@ -4,6 +4,11 @@ $color-title:#34327B;
 $color-text-lt: #EFF3FC;
 $color-white: #ffffff;
 
+section {
+    max-width:1140px;
+    margin:0 auto;
+}
+
 .button {
     background-color: $color_main_blue ;
     padding: .8rem;
