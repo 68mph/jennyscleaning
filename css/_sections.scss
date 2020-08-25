@@ -5,6 +5,36 @@ body {
     font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
 }
 
+header {
+    max-width:1140px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    .logo {
+        width: 200px;
+        height:auto;
+        margin-top:.8rem;
+    }
+
+    nav {
+        align-items: flex-end;
+        margin: 2.4rem 0 0;
+        a {
+            color:black;
+            margin: 0 3.4rem 0 0;
+            font-weight:600;
+        }
+        
+    }
+}
+
+#content {
+    background-image: url('../images/svg/bg-top-rt.svg'), url('../images/svg/bg-top-lt.svg');
+    background-position: top right, top left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 854px 868px, 277px 538px;
+}
+
 #hero {
     width:1140px;
     margin:0 auto;
@@ -12,13 +42,14 @@ body {
     justify-content: space-between;
 
     article {
-        width:600px;
-        margin-top:80px;
+        width:500px;
+        margin-top:140px;
 
         }
         aside {
             width:500px;
             height:auto;
+            margin:100px 0 0;
             img {
                 width:100%;
                 height:auto;
@@ -26,24 +57,72 @@ body {
         }
 }
 
-    header {
-        max-width:1140px;
-        display: flex;
-        justify-content: space-between;
-        margin:0 auto;
-        .logo {
-            width: 200px;
-            height:auto;
+#about {
+    max-width:1140px;
+    margin:0 auto;
+    article {
+        margin:200px auto 0;
+        width: 800px;
+        text-align: center;
+        .services {
+            display: flex;
+            justify-content: center;
+            h3 {
+                display: flex;
+                padding:0 0 2rem;
+                .fa-star {
+                    color:$color-main-blue;
+                    font-size:1rem;
+                    padding:12px;
+                }
+            }
+        }
+        p.points {
+            font-size: 24px;
+            font-weight: 400;
+            display: inline;
+            &:before {
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+                padding:12px;
+                color:$color-main-blue;
+            }
         }
 
-        nav {
-            align-items: flex-end;
-            margin: 2.4rem 0 0;
-            a {
-                color:black;
-                margin: 0 3.4rem 0 0;
-                font-weight:400;
+
+    }
+    .icon-container {
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        margin: 200px 0 0;
+        .icons {
+            width:268px;
+            text-align: center;
+            img {
+                width: 120px;
+                height:auto;
             }
-            
+            h3 {
+                font-size: 24px;
+                padding: 14px;
+            }
+            p {
+                font-size:16px;
+            }
         }
     }
+}
+
+footer {
+    .inner {
+        max-width:1140px;
+        margin: 0 auto;
+        nav {
+            margin-bottom: 125px;
+
+        }
+
+    }
+}
+
+

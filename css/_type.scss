@@ -2,7 +2,10 @@
 
 
 p {
-    font-size:1.6rem;
+    padding:0 0 2rem;
+    line-height: 1.4rem;
+    font-size: 18px;
+    font-weight: 100;
 }
 a {
     text-decoration: none;
@@ -23,5 +26,9 @@ h1 {
         line-height: 1.4rem;
         font-size: 18px;
         font-weight: 100;
+}
+    h3 {
+        font-size:38px;
+        color:$color-title;
 }
 

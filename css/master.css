@@ -100,19 +100,30 @@ input, select {
   vertical-align: middle;
 }
 
-button {
+.button {
   background-color: #4469FF;
   padding: .8rem;
   text-align: center;
   min-width: 188px;
   border-radius: 8px;
   color: #EFF3FC;
+  text-transform: uppercase;
   border: none;
   margin-right: 1rem;
+  display: inline-block;
+}
+
+.button.second {
+  background: #ffffff;
+  border: 1px solid #4469FF;
+  color: #4469FF;
 }
 
 p {
-  font-size: 1.6rem;
+  padding: 0 0 2rem;
+  line-height: 1.4rem;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 a {
@@ -140,36 +151,15 @@ h2 {
   font-weight: 100;
 }
 
+h3 {
+  font-size: 38px;
+  color: #34327B;
+}
+
 /* Main sectim css */
 body {
   font-family: 'Poppins', sans-serif;
   font-family: 'Poppins', sans-serif;
-}
-
-#hero {
-  width: 1140px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#hero article {
-  width: 600px;
-  margin-top: 80px;
-}
-
-#hero aside {
-  width: 500px;
-  height: auto;
-}
-
-#hero aside img {
-  width: 100%;
-  height: auto;
 }
 
 header {
@@ -186,6 +176,7 @@ header {
 header .logo {
   width: 200px;
   height: auto;
+  margin-top: .8rem;
 }
 
 header nav {
@@ -198,5 +189,125 @@ header nav {
 header nav a {
   color: black;
   margin: 0 3.4rem 0 0;
+  font-weight: 600;
+}
+
+#content {
+  background-image: url("../images/svg/bg-top-rt.svg"), url("../images/svg/bg-top-lt.svg");
+  background-position: top right, top left;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 854px 868px, 277px 538px;
+}
+
+#hero {
+  width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#hero article {
+  width: 500px;
+  margin-top: 140px;
+}
+
+#hero aside {
+  width: 500px;
+  height: auto;
+  margin: 100px 0 0;
+}
+
+#hero aside img {
+  width: 100%;
+  height: auto;
+}
+
+#about {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#about article {
+  margin: 200px auto 0;
+  width: 800px;
+  text-align: center;
+}
+
+#about article .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about article .services h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 2rem;
+}
+
+#about article .services h3 .fa-star {
+  color: #4469FF;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+#about article p.points {
+  font-size: 24px;
   font-weight: 400;
+  display: inline;
+}
+
+#about article p.points:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  padding: 12px;
+  color: #4469FF;
+}
+
+#about .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 200px 0 0;
+}
+
+#about .icon-container .icons {
+  width: 268px;
+  text-align: center;
+}
+
+#about .icon-container .icons img {
+  width: 120px;
+  height: auto;
+}
+
+#about .icon-container .icons h3 {
+  font-size: 24px;
+  padding: 14px;
+}
+
+#about .icon-container .icons p {
+  font-size: 16px;
+}
+
+footer .inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+footer .inner nav {
+  margin-bottom: 125px;
 }
