@@ -28,13 +28,80 @@ header {
     }
 }
 
+// List icons 
+
+ul {
+
+    li.expert:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-expert.svg");
+    }
+    li.price:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-price.svg");
+    }
+    li.results:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-results.svg");
+    }
+    li.environment:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-environment.svg");
+    }
+    li.safety:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-masks.svg");
+    }
+    li.disinfect:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-disinfect.svg");
+    }
+ 
+    li.expert:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-expert.svg");
+    }
+    li.price:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-price.svg");
+    }
+    li.results:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-results.svg");
+    }
+    li.environment:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-environment.svg");
+    }
+    li.safety:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-masks.svg");
+    }
+    li.disinfect:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-disinfect.svg");
+    }
+ }
+
 #content {
     background-image: url('../images/svg/bg-top-rt.svg'), url('../images/svg/bg-top-lt.svg');
     background-position: top right, top left;
     background-repeat: no-repeat, no-repeat;
     background-size: 854px 868px, 277px 538px;
     position: relative;
-    padding-bottom:300px;
+    padding-bottom:100px;
 }
 
 #hero {
@@ -123,7 +190,8 @@ header {
     article {
         width:500px;
     }
-}
+ 
+}   
 
 #products {
     @extend .flex;
@@ -142,19 +210,29 @@ header {
 }
 
 footer {
-    position: absolute;
+    background-image:url(../images/svg/bg-footer-lt.svg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 784px 585px;
+    position: relative;
     bottom:0;
     width:100%;
+    height:580px;
 
     .inner {
-        max-width:1140px;
+        width:1140px;
         margin: 0 auto;
+        position: absolute;
+        bottom:0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
 
         nav {
             margin-bottom: 125px;
             display:flex;
             justify-content: space-between;
-
+            align-items: center;
         }
 
     }

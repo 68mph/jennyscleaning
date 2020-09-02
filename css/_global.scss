@@ -29,6 +29,17 @@ $url_2: url(img/bg-footer.jpg);
     width:500px;
     height:auto;
 }
+
+.li-icons {
+    background-position: 0 center;
+    background-size: 40px auto;
+    background-repeat: no-repeat;
+    height:50px;
+    width:40px;
+    margin-right:16px;
+    display: inline-block;
+}
+
 //@extend-elements
 //original selectors
 //h1, h2, h3, h4, h5
@@ -67,6 +78,15 @@ section {
     border:none;
     margin-right: 1rem;
     display:inline-block;
+    &:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-phone.svg");
+        background-size: 24px 24px;
+        height: 24px;
+        width: 24px;
+        margin-bottom: -5px;
+    }
     &.second {
         background:$color-white;
         border: 1px solid $color-main-blue;
