@@ -100,6 +100,22 @@ input, select {
   vertical-align: middle;
 }
 
+.flex, #hero, #services, #products {
+  width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ill, #hero aside, #services aside, #products aside {
+  width: 500px;
+  height: auto;
+}
+
 section {
   max-width: 1140px;
   margin: 0 auto;
@@ -126,9 +142,10 @@ section {
 
 p {
   padding: 0 0 2rem;
-  line-height: 1.4rem;
+  line-height: 1.8rem;
   font-size: 18px;
   font-weight: 100;
+  color: #8689A8;
 }
 
 a {
@@ -141,8 +158,9 @@ h1, h2, h3 {
 
 h1 {
   font-size: 38px;
-  line-height: 3.6rem;
+  line-height: 3.2rem;
   padding: 0 0 2rem;
+  font-weight: 100;
 }
 
 h1 span {
@@ -161,10 +179,18 @@ h3 {
   color: #34327B;
 }
 
+ul {
+  list-style-type: none;
+  color: #34327B;
+}
+
+ul li {
+  padding: 1rem 0;
+}
+
 /* Main sectim css */
 body {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -194,7 +220,7 @@ header nav {
 header nav a {
   color: black;
   margin: 0 3.4rem 0 0;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 #content {
@@ -202,17 +228,8 @@ header nav a {
   background-position: top right, top left;
   background-repeat: no-repeat, no-repeat;
   background-size: 854px 868px, 277px 538px;
-}
-
-#hero {
-  width: 1140px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
+  padding-bottom: 300px;
 }
 
 #hero article {
@@ -221,19 +238,12 @@ header nav a {
 }
 
 #hero aside {
-  width: 500px;
-  height: auto;
   margin: 100px 0 0;
 }
 
 #hero aside img {
   width: 100%;
   height: auto;
-}
-
-#about {
-  max-width: 1140px;
-  margin: 0 auto;
 }
 
 #about article {
@@ -256,6 +266,7 @@ header nav a {
   display: -ms-flexbox;
   display: flex;
   padding: 0 0 2rem;
+  font-weight: 400;
 }
 
 #about article .services h3 .fa-star {
@@ -308,9 +319,36 @@ header nav a {
   font-size: 16px;
 }
 
-#services img {
-  width: 640px;
+#services {
+  margin-top: 100px;
+}
+
+#services aside img {
+  width: 100%;
   height: auto;
+}
+
+#services article {
+  width: 500px;
+}
+
+#products {
+  margin-top: 100px;
+}
+
+#products aside img {
+  width: 100%;
+  height: auto;
+}
+
+#products article {
+  width: 500px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .inner {
@@ -320,4 +358,10 @@ footer .inner {
 
 footer .inner nav {
   margin-bottom: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

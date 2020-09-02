@@ -2,7 +2,7 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
+    font-family: $font_1;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
         a {
             color:black;
             margin: 0 3.4rem 0 0;
-            font-weight:600;
+            font-weight:400;
         }
         
     }
@@ -33,22 +33,19 @@ header {
     background-position: top right, top left;
     background-repeat: no-repeat, no-repeat;
     background-size: 854px 868px, 277px 538px;
+    position: relative;
+    padding-bottom:300px;
 }
 
 #hero {
-    width:1140px;
-    margin:0 auto;
-    display:flex;
-    justify-content: space-between;
-
+ @extend .flex;
     article {
         width:500px;
         margin-top:140px;
 
         }
         aside {
-            width:500px;
-            height:auto;
+          @extend .ill;
             margin:100px 0 0;
             img {
                 width:100%;
@@ -58,8 +55,6 @@ header {
 }
 
 #about {
-    max-width:1140px;
-    margin:0 auto;
     article {
         margin:200px auto 0;
         width: 800px;
@@ -70,6 +65,7 @@ header {
             h3 {
                 display: flex;
                 padding:0 0 2rem;
+                font-weight:400;
                 .fa-star {
                     color:$color-main-blue;
                     font-size:1rem;
@@ -114,18 +110,50 @@ header {
 }
 
 #services {
-    img {
-        width:640px;
-        height:auto;
+    @extend .flex;
+    margin-top:100px;
+    aside {
+        @extend .ill;
+        img {
+            width:100%;
+            height:auto;
+        }
+    }
+
+    article {
+        width:500px;
+    }
+}
+
+#products {
+    @extend .flex;
+    margin-top:100px;
+    aside {
+        @extend .ill;
+        img {
+            width:100%;
+            height:auto;
+        }
+    }
+
+    article {
+        width:500px;
     }
 }
 
 footer {
+    position: absolute;
+    bottom:0;
+    width:100%;
+
     .inner {
         max-width:1140px;
         margin: 0 auto;
+
         nav {
             margin-bottom: 125px;
+            display:flex;
+            justify-content: space-between;
 
         }
 
