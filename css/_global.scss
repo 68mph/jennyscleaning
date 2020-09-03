@@ -1,4 +1,9 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+//font colors
 $color-main-blue: #4469FF;
 $color-title:#34327B;
 $color-text-lt: #EFF3FC;
@@ -10,14 +15,15 @@ $size_100: 100%;
 $size_50: 50%;
 $vh: calc(100vh - 54px);
 
-
 //fonts
 $font_1: 'Poppins', sans-serif;
 
 //urls
-$url_0: url(img/bg-home.png);
-$url_2: url(img/bg-footer.jpg);
+$url_1: url('../images/svg/bg-top-rt.svg');
+$url_2: url('../images/svg/bg-top-lt.svg');
+$url_3: url('../images/svg/bg-footer-lt.svg');
 
+//@extend-elements
 .flex {
     width:1140px;
     margin:0 auto;
@@ -78,15 +84,18 @@ section {
     border:none;
     margin-right: 1rem;
     display:inline-block;
-    &:before {
-        @extend .li-icons;
-        content: '';
-        background-image: url("../images/svg/ico-phone.svg");
-        background-size: 24px 24px;
-        height: 24px;
-        width: 24px;
-        margin-bottom: -5px;
+    &.phone {
+        &:before {
+            @extend .li-icons;
+            content: '';
+            background-image: url("../images/svg/ico-phone.svg");
+            background-size: 24px 24px;
+            height: 24px;
+            width: 24px;
+            margin-bottom: -5px;
+        }
     }
+
     &.second {
         background:$color-white;
         border: 1px solid $color-main-blue;

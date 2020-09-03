@@ -39,8 +39,14 @@ ul {
     list-style-type: none;
     color: $color-title;
     li {
-        padding:1rem 0;
+        padding:0.6rem 0;
         display: flex;
         align-items: center;
     }
+}
+
+small {
+    color:$color-main-blue;
+    font-size: 1rem;
+    font-weight:500;
 }

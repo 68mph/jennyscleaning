@@ -18,11 +18,15 @@ header {
 
     nav {
         align-items: flex-end;
-        margin: 2.4rem 0 0;
+        margin: 3.4rem 0 0;
         a {
             color:black;
             margin: 0 3.4rem 0 0;
             font-weight:400;
+            &.selected {
+                color:$color-main-blue;
+                font-weight: 500;
+            }
         }
         
     }
@@ -96,12 +100,18 @@ ul {
  }
 
 #content {
-    background-image: url('../images/svg/bg-top-rt.svg'), url('../images/svg/bg-top-lt.svg');
+
+    background-image: $url_1, $url_2;
     background-position: top right, top left;
     background-repeat: no-repeat, no-repeat;
     background-size: 854px 868px, 277px 538px;
     position: relative;
     padding-bottom:100px;
+    background-image: $url_2;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 277px 538px;
+
 }
 
 #hero {
@@ -157,7 +167,7 @@ ul {
         display: flex;
         justify-content: space-between;
         width:100%;
-        margin: 200px 0 0;
+        margin: 140px 0 0;
         .icons {
             width:268px;
             text-align: center;
@@ -178,7 +188,7 @@ ul {
 
 #services {
     @extend .flex;
-    margin-top:100px;
+    margin-top:140px;
     aside {
         @extend .ill;
         img {
@@ -210,7 +220,7 @@ ul {
 }
 
 footer {
-    background-image:url(../images/svg/bg-footer-lt.svg);
+    background-image:$url_3;
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 784px 585px;

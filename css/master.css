@@ -100,6 +100,11 @@ input, select {
   vertical-align: middle;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .flex, #hero, #services, #products {
   width: 1140px;
   margin: 0 auto;
@@ -116,7 +121,7 @@ input, select {
   height: auto;
 }
 
-.li-icons, .button:before, ul li.expert:before, ul li.price:before, ul li.results:before, ul li.environment:before, ul li.safety:before, ul li.disinfect:before {
+.li-icons, .button.phone:before, ul li.expert:before, ul li.price:before, ul li.results:before, ul li.environment:before, ul li.safety:before, ul li.disinfect:before {
   background-position: 0 center;
   background-size: 40px auto;
   background-repeat: no-repeat;
@@ -144,7 +149,7 @@ section {
   display: inline-block;
 }
 
-.button:before {
+.button.phone:before {
   content: '';
   background-image: url("../images/svg/ico-phone.svg");
   background-size: 24px 24px;
@@ -205,13 +210,19 @@ ul {
 }
 
 ul li {
-  padding: 1rem 0;
+  padding: 0.6rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+small {
+  color: #4469FF;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* Main sectim css */
@@ -240,13 +251,18 @@ header nav {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 2.4rem 0 0;
+  margin: 3.4rem 0 0;
 }
 
 header nav a {
   color: black;
   margin: 0 3.4rem 0 0;
   font-weight: 400;
+}
+
+header nav a.selected {
+  color: #4469FF;
+  font-weight: 500;
 }
 
 ul li.expert:before {
@@ -316,6 +332,10 @@ ul li.disinfect:before {
   background-size: 854px 868px, 277px 538px;
   position: relative;
   padding-bottom: 100px;
+  background-image: url("../images/svg/bg-top-lt.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 277px 538px;
 }
 
 #hero article {
@@ -383,7 +403,7 @@ ul li.disinfect:before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 200px 0 0;
+  margin: 140px 0 0;
 }
 
 #about .icon-container .icons {
@@ -406,7 +426,7 @@ ul li.disinfect:before {
 }
 
 #services {
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 #services aside img {
@@ -432,7 +452,7 @@ ul li.disinfect:before {
 }
 
 footer {
-  background-image: url(../images/svg/bg-footer-lt.svg);
+  background-image: url("../images/svg/bg-footer-lt.svg");
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 784px 585px;
@@ -463,4 +483,103 @@ footer .inner nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .button {
+    width: 100%;
+    margin: 0 0 1rem;
+  }
+  .btns {
+    display: none;
+  }
+  #content {
+    width: 100%;
+    background-image: url("../images/svg/bg-top-rt.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 220px auto;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  #content header {
+    display: block;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  #content header .logo {
+    width: 120px;
+  }
+  #content header nav {
+    display: none;
+  }
+  #content section {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  #content section article {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  #content aside {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0;
+  }
+  #content aside img {
+    width: 100%;
+  }
+  #content #about article p.points {
+    font-size: 1rem;
+  }
+  #content #about .icon-container {
+    display: block;
+    padding: 2rem 1rem;
+    margin: 0;
+  }
+  #content #about .icon-container .icons {
+    width: 100%;
+  }
+  #content #about .services {
+    display: block;
+  }
+  #content #about .services h3 {
+    display: block;
+  }
+  #content #services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #content #services aside {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #content #services article {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer {
+    display: none;
+  }
 }
