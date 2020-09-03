@@ -35,7 +35,7 @@
     background-image: $url_1;
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 220px auto;
+    background-size: 240px auto;
     position: relative;
     padding-bottom:100px;
 header {
@@ -46,10 +46,19 @@ header {
             width:120px;
         
         }
-        nav {
+        .links {
         display:none;
         }
-    
+        .phone {
+            position: absolute;
+            top: 41px;
+            right: 1.2rem;
+            margin: 0;
+            font-size:.8rem;
+            &:before {
+                margin-bottom: -6px;
+            }
+        }
     }
     section {
         width:100%;
@@ -84,7 +93,8 @@ header {
             padding: 2rem 1rem;
             margin:0;
             .icons {
-                width:100%
+                width:100%;
+                margin: 4rem 0;
             }
         }
         .services {
@@ -109,7 +119,30 @@ header {
 
   }  
   footer {
-    display:none;
+        background-image:$url_3;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 200px auto;
+        position: relative;
+        bottom:0;
+        width:100%;
+        height:180px;
+        .inner {
+            width:100%;
+            nav {
+                flex-direction: column;
+                margin-bottom: 40px;
+                 a {
+                     padding-bottom: 24px;
+                     color:$color-main-blue;
+                 }
+            }
+            .logo {
+                width:140px;
+                height:auto;
+            }
+
+        }
 }
 }
 

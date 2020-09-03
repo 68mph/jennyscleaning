@@ -87,21 +87,25 @@ section {
     border:none;
     margin-right: 1rem;
     display:inline-block;
-    &.phone {
-        &:before {
-            @extend .li-icons;
-            content: '';
-            background-image: url("../images/svg/ico-phone.svg");
-            background-size: 24px 24px;
-            height: 24px;
-            width: 24px;
-            margin-bottom: -5px;
-        }
-    }
+
 
     &.second {
         background:$color-white;
         border: 1px solid $color-main-blue;
         color: $color-main-blue;
+    }
+}
+
+.phone {
+    color:$color-main-blue;
+    &:before {
+        @extend .li-icons;
+        content: '';
+        background-image: url("../images/svg/ico-phone.svg");
+        background-size: 24px 24px;
+        height: 24px;
+        width: 24px;
+        margin-bottom: -5px;
+        margin-right: 8px;
     }
 }
